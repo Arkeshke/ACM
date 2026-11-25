@@ -195,7 +195,6 @@ footer {
 .burger span,
 .burger span::before,
 .burger span::after {
-  content: "";
   position: absolute;
   left: 10px;
   width: 16px;
@@ -209,11 +208,15 @@ footer {
 }
 
 .burger span::before {
-  top: -5px;
+  content: "";
+  left: 0;      /* ← выравниваем с span */
+  top: -6px;
 }
 
 .burger span::after {
-  top: 5px;
+  content: "";
+  left: 0;      /* ← выравниваем с span */
+  top: 6px;
 }
 
 /* ============================================================
@@ -1021,6 +1024,10 @@ footer {
     padding: 64px 0;
     transform: none !important;
     border-radius: 0 !important;
+  }
+
+  .chapters::after {
+    height: 0;
   }
 
   .chapter__inner {
