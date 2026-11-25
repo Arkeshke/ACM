@@ -422,12 +422,24 @@ footer {
 
 /* ============================================================
    ГЛАВЫ — SLIDE STACKING
+   Псевдоэлемент ::after создаёт «буфер» после последней
+   карточки — как фантомный 4-й блок. Без него последняя
+   карточка не может прилипнуть: sticky упирается в конец
+   контейнера и не «висит».
    ============================================================ */
 .chapters {
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
   position: relative;
+}
+
+/* «Фантомный 4-й блок»: даёт последней карточке место,
+   чтобы она могла прилипнуть и постоять наверху */
+.chapters::after {
+  content: "";
+  display: block;
+  height: 100vh;
 }
 
 .chapter {
@@ -440,31 +452,26 @@ footer {
   padding: 80px 0;
   background: var(--bg);
   border-top: 1px solid var(--line);
-  will-change: transform, border-radius;
-  overflow: hidden;
-  transform-origin: top center;   
+  transform-origin: top center;
+  /* overflow: hidden и will-change: transform убраны —
+     они ломают sticky-контекст */
 }
 
-/* Пауза между главами — 40vh вместо 80vh */
-.chapter:not(:last-child) {
+/* Пауза между карточками */
+.chapter {
   margin-bottom: 40vh;
 }
 
-.chapter:nth-child(1) {
-  z-index: 1;
+/* У последней карточки margin не нужен — за него
+   отвечает псевдоэлемент ::after на .chapters */
+.chapter:last-child {
+  margin-bottom: 0;
 }
 
-.chapter:nth-child(2) {
-  z-index: 2;
-}
-
-.chapter:nth-child(3) {
-  z-index: 3;
-}
-
-.chapter:nth-child(even) {
-  background: var(--bg-2);
-}
+.chapter:nth-child(1) { z-index: 1; }
+.chapter:nth-child(2) { z-index: 2; }
+.chapter:nth-child(3) { z-index: 3; }
+.chapter:nth-child(even) { background: var(--bg-2); }
 
 .chapter__inner {
   width: 100%;
