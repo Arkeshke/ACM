@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Издательство: издаём без навязанных правок. Каждую правку согласуем письменно. От рукописи до полки — в среднем 3 месяца.">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Издательство — от рукописи до полки</title>
+</head>
+
+<body>
+
+
+
+  <!-- ===================== ШАПКА ===================== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="#" class="brand" aria-label="Издательство — на главную">
+        <span class="brand__mark" aria-hidden="true">ИЗ</span>
+        Издательство
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#process">Как мы работаем</a>
+        <a href="#lead">Гайд и прайс</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Мобильное меню -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Мобильная навигация">
+    <a href="#process">Как мы работаем</a>
+    <a href="#lead">Гайд и прайс</a>
+    <a href="#contacts">Контакты</a>
+    <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+  </nav>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="hero__sky" aria-hidden="true">
+        <span class="lantern"></span>
+        <span class="lantern"></span>
+        <span class="lantern"></span>
+        <span class="lantern"></span>
+        <span class="lantern"></span>
+        <span class="lantern"></span>
+        <span class="lantern"></span>
+      </div>
+      <div class="container">
+        
+        <h1>Отпусти свою книгу <span class="accent">в полёт</span></h1>
+        <p class="hero__sub">
+          Издаём без навязанных правок: каждую правку согласуем с вами письменно.
+          <strong>От рукописи до полки — в среднем 3 месяца.</strong>
+        </p>
+        
+        <div class="hero__actions">
+          <a href="#lead" class="btn btn--primary">Получить гайд и прайс</a>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- ===================== ГЛАВЫ (SLIDE STACKING) ===================== -->
+    <div class="chapters" id="process">
+
+      <!-- ГЛАВА 1: КАК МЫ РАБОТАЕМ -->
+      <section class="chapter" aria-labelledby="chapter-1-title">
+        <div class="chapter__inner">
+          <div class="chapter-label">
+            <span class="chapter-label__num">01</span>
+            <span>Как мы работаем</span>
+          </div>
+          <h2 id="chapter-1-title" class="process__title" style="font-size:clamp(24px,3.4vw,34px); margin:0 0 8px;">
+            Три правила, которые не меняются
+          </h2>
+          <ol class="process">
+            <li class="process__item reveal">
+              <div>
+                <h3 class="process__title">Редактура по согласованию</h3>
+                <p class="process__text">
+                  Ни одной правки без вашего письменного «да». Спорные места
+                  обсуждаем голосом, но фиксируем в переписке — чтобы через
+                  месяц не вспоминать, кто что решил.
+                </p>
+              </div>
+            </li>
+            <li class="process__item reveal">
+              <div>
+                <h3 class="process__title">Смета фиксируется в договоре</h3>
+                <p class="process__text">
+                  Стоимость редактуры, вёрстки, обложки и печати — одной строкой
+                  в договоре. Если объём работ меняется, сначала подписываем
+                  допсоглашение, потом работаем.
+                </p>
+              </div>
+            </li>
+            <li class="process__item reveal">
+              <div>
+                <h3 class="process__title">Один менеджер от заявки до тиража</h3>
+                <p class="process__text">
+                  Не переключаем вас между отделами. Один человек ведёт проект
+                  от первой заявки до передачи тиража — и отвечает на вопросы
+                  в рабочее время, а не «в течение 5 дней».
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ГЛАВА 2: МЕТАФОРА ПОЛЁТА -->
+      <section class="chapter" aria-labelledby="chapter-2-title">
+        <div class="chapter__inner">
+          <div class="chapter-label">
+            <span class="chapter-label__num">02</span>
+            <span>Почему «в полёт»</span>
+          </div>
+          <div class="flight">
+            <div class="reveal">
+              <blockquote class="flight__quote" id="chapter-2-title">
+                Книга не должна лежать в столе.<br>
+                Она должна <span>лететь</span> — к читателю, на полку, в разговор.
+              </blockquote>
+              <p class="flight__caption">
+                Мы не обещаем бестселлер. Мы обещаем, что рукопись не застрянет
+                на середине пути.
+              </p>
+            </div>
+
+            <!-- Здесь твоя графика. Пример: <img src="images/art.png" alt=""> -->
+            <div class="flight__media reveal" aria-hidden="true">
+              <!-- <img src="images/your-art.png" alt=""> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ГЛАВА 3: ЛИД-МАГНИТ И ФОРМА -->
+      <section class="chapter" id="lead" aria-labelledby="chapter-3-title">
+        <div class="chapter__inner">
+          <div class="chapter-label">
+            <span class="chapter-label__num">03</span>
+            <span>Гайд и прайс</span>
+          </div>
+          <div class="lead">
+            <div class="reveal">
+              <h2 class="lead__title" id="chapter-3-title">
+                Куда прислать гайд и прайс?
+              </h2>
+              <p class="lead__text">
+                Пришлём PDF-гайд «Как подготовить рукопись к изданию»
+                и актуальный прайс на редактуру, вёрстку и печать.
+                Без звонка и без «менеджер свяжется в течение дня».
+              </p>
+              <div class="lead-magnet">
+                <div class="lead-magnet__icon" aria-hidden="true">PDF<br>24</div>
+                <div>
+                  <p class="lead-magnet__title">Гайд «Как подготовить рукопись к изданию»</p>
+                  <p class="lead-magnet__meta">PDF · 24 страницы · чек-лист и разбор договора</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-card reveal">
+              <div id="form-body">
+                <h3 class="form-card__title">Заявка на гайд и прайс</h3>
+                <p class="form-card__sub">Три поля — и файлы у вас на почте.</p>
+
+                <form id="lead-form" novalidate>
+                  <div style="position:absolute;left:-9999px;" aria-hidden="true">
+                    <label for="company">Не заполняйте</label>
+                    <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
+                  </div>
+
+                  <div class="field">
+                    <label for="name">Имя</label>
+                    <input class="input" type="text" id="name" name="name" placeholder="Как к вам обращаться"
+                      autocomplete="given-name" aria-required="true" aria-describedby="name-error">
+                    <div class="field-error" id="name-error" role="alert"></div>
+                  </div>
+
+                  <div class="field">
+                    <label for="email">Email</label>
+                    <input class="input" type="email" id="email" name="email" placeholder="you@example.com"
+                      autocomplete="email" inputmode="email" aria-required="true" aria-describedby="email-error">
+                    <div class="field-error" id="email-error" role="alert"></div>
+                  </div>
+
+                  <div class="field">
+                    <label for="phone">Телефон</label>
+                    <input class="input" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__"
+                      autocomplete="tel" inputmode="tel" aria-required="true" aria-describedby="phone-error">
+                    <div class="field-error" id="phone-error" role="alert"></div>
+                  </div>
+
+                  <fieldset style="border:0;margin:0 0 14px;padding:0;">
+                    <legend
+                      style="font-size:12px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:6px;">
+                      Я —
+                    </legend>
+                    <div class="roles">
+                      <label class="role">
+                        <input type="radio" name="role" value="author" checked>
+                        <span>Автор</span>
+                      </label>
+                      <label class="role">
+                        <input type="radio" name="role" value="teacher">
+                        <span>Педагог</span>
+                      </label>
+                      <label class="role">
+                        <input type="radio" name="role" value="reader">
+                        <span>Читатель</span>
+                      </label>
+                    </div>
+                  </fieldset>
+
+                  <div class="consent">
+                    <input type="checkbox" id="consent" name="consent" aria-required="true">
+                    <label for="consent">
+                      Согласен на обработку персональных данных и получение письма с гайдом и прайсом.
+                      <a href="#privacy" onclick="return false;">Политика конфиденциальности</a>
+                    </label>
+                  </div>
+                  <div class="field-error" id="consent-error" role="alert" style="margin:-10px 0 12px;"></div>
+
+                  <button type="submit" class="btn btn--primary" id="submit-btn" disabled>
+                    Получить гайд и прайс
+                  </button>
+
+                  <p class="form-note">
+                    Файлы придут на email в течение 2 минут.<br>
+                    Без спама. Отписаться можно в один клик.
+                  </p>
+                </form>
+              </div>
+
+              <div class="form-success" id="form-success" role="status" aria-live="polite">
+                <div class="form-success__icon" aria-hidden="true">✓</div>
+                <h3>Готово. Проверьте почту</h3>
+                <p>Гайд и прайс отправлены на <strong id="success-email"></strong>.</p>
+                <button type="button" class="link-btn" id="reset-form">Отправить ещё раз</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <!-- /chapters -->
+
+    <!-- ===================== ПОДВАЛ ===================== -->
+    <footer class="site-footer" id="contacts">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <h2 class="footer__title">Издательство</h2>
+            <p class="footer__text">
+              Издаём книги с 2012 года. Работаем с авторами напрямую,
+              без литературных агентов-посредников и без «пакета обязательных услуг».
+            </p>
+          </div>
+          <div>
+            <h2 class="footer__title">Контакты</h2>
+            <p class="footer__text">
+              <a href="tel:+74951234567">+7 (555) 123-45-67</a><br>
+              <a href="mailto:ALEXFEN@izdat.example">ALEXFEN@izdat.example</a><br>
+              Москва, ул. Ховрино, д. Долгопрудный, офис СГ
+            </p>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>© 2012–2026 ООО «Издательство». Все права защищены.</span>
+          <span>
+            <a href="#privacy" onclick="return false;"
+              style="color:var(--ink-muted);text-decoration:underline;">Политика конфиденциальности</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
